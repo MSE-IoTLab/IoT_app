@@ -236,13 +236,18 @@
 			</tr>
 			<tr>
 				<td>GET</td>
-				<td><b><a href="/switches/get_switches_list">/switches/get_switches_list</a></b></td>
-				<td>Lists all switch nodes in the network.</td>
+				<td><b><a href="/dimmers/get_dimmers_list">/dimmers/get_dimmers_list</a></b></td>
+				<td>Lists all dimmer nodes in the network.</td>
+			</tr>
+			<tr>
+				<td>GET</td>
+				<td><b>/dimmers/{$dimmer_id}/get_level</a></b></td>
+				<td>Gets dimmer node's brightness level</td>
 			</tr>
 			<tr>
 				<td style="color: red;">POST</td>
-				<td><b>/switches/send_command</b></td>
-				<td>Sends command to switch node</td>
+				<td><b>/dimmers/{$dimmer_id}/set_level</b></td>
+				<td>Sends command to dimmer node to set its brightness level</td>
 			</tr>
 
         </table>		
